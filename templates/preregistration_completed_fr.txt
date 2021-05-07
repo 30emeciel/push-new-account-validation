@@ -2,3 +2,4 @@
 Tu peux voir les informations de sa préinscription avec <{{pax.preregistration_form_entry_url}}|ce lien>.
 Tu peux récupérer le mot de passe du compte CognitoForms du 30ème Ciel dans <https://docs.google.com/document/d/16VcFJkATwBJe9EmOKfD0peiIzY6bK2bJDTO7x9D6Qxo/edit?usp=sharing|ce document>
 
+<https://coliv.30emeciel.fr/supervisor/pax|Voir la liste des pax>
