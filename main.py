@@ -1,11 +1,14 @@
 import logging
 
 from box import Box
-from core.firestore_client import db
-from core.slack_message import send_slack_message
+from core import firestore_client
+from core.slack_message import SlackSender
 from core.tpl import render
 
 log = logging.getLogger(__name__)
+
+db = firestore_client.db()
+slack_sender = SlackSender()
 
 
 def from_firestore(event, context):
@@ -42,5 +45,5 @@ def push_new_account_to_slack(docpath, event):
         "pax": pax
     }
     slack_message = render("preregistration_completed_fr.txt", data)
-    send_slack_message(slack_message)
+    slack_sender.send_slack_message(slack_message)
 
