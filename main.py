@@ -38,7 +38,7 @@ def push_new_account_to_slack(docpath, event):
     assert pax_doc.exists
     pax = Box(pax_doc.to_dict())
     if pax.state != "REGISTERED":
-        log.info(f"pax {pax.sub} has 'state' set to REGISTERED, ignoring")
+        log.info(f"pax {pax_ref.id} has 'state' set to REGISTERED, ignoring")
         return
 
     data = {
